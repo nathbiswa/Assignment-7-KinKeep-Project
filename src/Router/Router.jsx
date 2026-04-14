@@ -3,6 +3,7 @@ import RootLayout from "../RootLayout/RootLayout";
 import HomePage from "./Home/HomePage";
 import TimeLInePage from "../Pages/TimeLinePage/TimeLInePage";
 import StatsPage from "../Pages/StatsPage/StatsPage";
+import FriemdDetailesPage from "./Home/FriendDetailesPage/FriemdDetailesPage";
 
 export const router = createBrowserRouter([
     {
@@ -12,6 +13,10 @@ export const router = createBrowserRouter([
         {
             index: true,
             element: <HomePage/>,
+        },
+          {
+            path: "/:id",
+            element: <FriemdDetailesPage/>,
         },
         {
             path: "/timeline",

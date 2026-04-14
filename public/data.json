@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://i.ibb.co.com/5xrcKLcs/Ellipse-1-1.png",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "Overdue",
+    "tags": ["work"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "picture": "https://i.ibb.co.com/Xr29yPc8/Ellipse-1-2.png",
+    "email": "jane@example.com",
+    "days_since_contact": 9,
+    "status": "Almost Due",
+    "tags": ["family"],
+    "bio": "Colleague from marketing department.",
+    "goal": 10,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "picture": "https://i.ibb.co.com/Y4HTVLP0/Ellipse-1-3.png",
+    "email": "michael@example.com",
+    "days_since_contact": 20,
+    "status": "Overdue",
+    "tags": ["Hobby","travel"],
+    "bio": "Workout partner at the gym.",
+    "goal": 7,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "picture": "https://i.ibb.co.com/SDvS6DLY/Ellipse-1-4.png",
+    "email": "emily@example.com",
+    "days_since_contact": 6,
+    "status": "Almost Due",
+    "tags": ["family"],
+    "bio": "Cousin living in another city.",
+    "goal": 15,
+    "next_due_date": "2025-08-01"
+  },
+  {
+    "id": 5,
+    "name": "Chris Wilson",
+    "picture": "https://i.ibb.co.com/4wJ0S67k/Ellipse-1-5.png",
+    "email": "chris@example.com",
+    "days_since_contact": 30,
+    "status": "Overdue",
+    "tags": ["Hobby", "travel"],
+    "bio": "Friend from high school days.",
+    "goal": 20,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 6,
+    "name": "Sarah Johnson",
+    "picture": "https://i.ibb.co.com/xSjV1hnN/Ellipse-1-6.png",
+    "email": "sarah@example.com",
+    "days_since_contact": 3,
+    "status": "On Track",
+    "tags": ["work"],
+    "bio": "Client for web development project.",
+    "goal": 10,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 7,
+    "name": "David Lee",
+    "picture": "https://i.ibb.co.com/DfS0CM2V/Ellipse-1-7.png",
+    "email": "david@example.com",
+    "days_since_contact": 13,
+    "status": "Almost Due",
+    "tags": ["travel"],
+    "bio": "Met during a trip abroad.",
+    "goal": 14,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 8,
+    "name": "Olivia Martin",
+    "picture": "https://i.ibb.co.com/hFrRGwyH/Ellipse-1-8.png",
+    "email": "olivia@example.com",
+    "days_since_contact": 2,
+    "status": "On Track",
+    "tags": ["work"],
+    "bio": "Friendly neighbor nearby.",
+    "goal": 12,
+    "next_due_date": "2025-07-28"
+  },
+  {
+    "id": 9,
+    "name": "Daniel Garcia",
+    "picture": "https://i.ibb.co.com/nWJj3t5/Ellipse-1-9.png",
+    "email": "daniel@example.com",
+    "days_since_contact": 25,
+    "status": "Overdue",
+    "tags": ["Hobby", "travel"],
+    "bio": "Business partner for startup.",
+    "goal": 10,
+    "next_due_date": "2025-07-17"
+  }
+]

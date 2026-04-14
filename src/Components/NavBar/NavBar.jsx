@@ -4,15 +4,14 @@ import { NavLink } from "react-router";
 import { CiHome } from "react-icons/ci";
 import { MdAccessTime } from "react-icons/md";
 import { ImStatsDots } from "react-icons/im";
+import logo from "../../assets/img/logo.png"
 
 const NavBar = () => {
   return (
     <div className="shadow-sm">
       <div className="container mx-auto navbar bg-base-100">
         <div className="flex-1">
-          <h1 className="text-2xl">
-            <span className="text-[#1F2937] font-bold">Keen</span>Keeper
-          </h1>
+          <img src={logo} alt="" className="w-auto h-[45px]" />
         </div>
         <div className="">
           <ul className="flex items-center gap-5 px-1">
