@@ -6,10 +6,10 @@ import { IoVideocamOutline } from "react-icons/io5";
 import { ImFilesEmpty } from "react-icons/im";
 
 const TimeLInePage = () => {
-  const { selectedFriend, setSelectedFriend } = useContext(FrinedContext);
+  const { selectedFriend } = useContext(FrinedContext);
   console.log(selectedFriend);
-  const {selectedMessageFriend, setSelectedMessageFriend} = useContext(FrinedContext);
-  const {selectedVideoFriend, setSelectedVideoFriend} = useContext(FrinedContext);
+  const {selectedMessageFriend} = useContext(FrinedContext);
+  const {selectedVideoFriend} = useContext(FrinedContext);
   if (
     selectedFriend.length === 0 &&
     selectedMessageFriend.length === 0 &&

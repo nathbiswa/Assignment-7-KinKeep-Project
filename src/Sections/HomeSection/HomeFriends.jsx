@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../../Card/Card';
+import useHooks from '../../Hooks/UseHooks';
+import { GridLoader } from 'react-spinners';
 
 const HomeFriends = () => {
+     const {loading} = useHooks();
 
     const [selectedFriend, setSelectedFriend] = useState([]);
 
@@ -18,7 +21,13 @@ const HomeFriends = () => {
 
     }, []);
 
-
+ if (loading) {
+    return (
+      <div className="flex justify-center items-center py-18">
+        <GridLoader color="#54CF68"></GridLoader>
+      </div>
+    );
+  }
 
     return (
         <div className='bg-[#E9E9E9]'>

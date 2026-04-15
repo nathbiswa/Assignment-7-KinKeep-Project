@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 const useHooks = () => {
     const [friendData, setFriendData] = useState([]);
       const [loading, setLoading] = useState(true);
+       const [selectedFriend, setSelectedFriend] = useState([]);
     
       useEffect(() => {
         const friendDataPromise = async () => {
@@ -18,7 +19,7 @@ const useHooks = () => {
       }, []);
 
 
-    return {friendData, loading};
+    return {friendData, loading, selectedFriend, setSelectedFriend};
 };
 
 export default useHooks;
