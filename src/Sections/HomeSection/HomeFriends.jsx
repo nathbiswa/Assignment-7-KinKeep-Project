@@ -11,7 +11,7 @@ const HomeFriends = () => {
             const res = await fetch("data.json");
             const data = await res.json();
             setSelectedFriend(data);
-            console.log(data, "All freinds list");
+            // console.log(data, "All freinds list");
         };
         friendData();
 
@@ -26,7 +26,7 @@ const HomeFriends = () => {
             <div className='py-4'>
                 <h1 className='text-3xl font-bold p-2'>Your Friends</h1>
             </div>
-           <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3'>
+           <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 py-10'>
             {
                 selectedFriend.map((item, index)=>{
                     return <Card key={index} item={item}></Card>

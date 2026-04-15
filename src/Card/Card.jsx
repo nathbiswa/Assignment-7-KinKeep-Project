@@ -1,15 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const Card = ({ item }) => {
   const { status, picture, name, days_since_contact } = item;
 
   return (
-    <div>
-      <div className=" card bg-base-100 shadow-sm">
+   
+      <NavLink to={`/${item.id}`} className="card bg-base-100 shadow-sm">
         <figure className="px-10 pt-10">
           <img src={picture} alt="Shoes" className="rounded-xl" />
         </figure>
-        <div className="card-body items-center text-center space-y-3">
+        <div className="card-body items-center text-center space-y-3a">
           <h2 className="card-title">{name}</h2>
           <p className="text-sm text-gray-400">
             {days_since_contact}d <span>ago</span>
@@ -30,8 +31,8 @@ const Card = ({ item }) => {
             {status}
           </div>
         </div>
-      </div>
-    </div>
+      </NavLink>
+   
   );
 };
 
