@@ -11,7 +11,7 @@ const NavBar = () => {
     <div className="shadow-sm">
       <div className="container mx-auto navbar bg-base-100">
         <div className="flex-1">
-          <img src={logo} alt="" className="w-auto h-[45px]" />
+          <img src={logo} alt="" className="w-[100px] md:w-auto h-[20px] md:h-[45px]" />
         </div>
         <div className="">
           <ul className="flex items-center gap-5 px-1">

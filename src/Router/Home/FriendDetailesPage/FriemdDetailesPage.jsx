@@ -48,10 +48,10 @@ const FriendDetailesPage = () => {
 
   return (
     <div className="bg-[#E9E9E9]">
-      <div className=" w-8/12 mx-auto py-10 ">
-        <div className="flex justify-between gap-3">
-          <div className="flex-1">
-            <div className="card bg-base-100">
+      <div className="w-full md:w-8/12 mx-auto py-10 ">
+        <div className="flex flex-col md:flex-row justify-between gap-3">
+          <div className="flex-1 ">
+            <div className="card bg-base-100 ">
               <figure className="px-10 pt-10">
                 <img
                   src={axceptedFriend.picture}
@@ -95,34 +95,34 @@ const FriendDetailesPage = () => {
           <div className="flex-3">
             <div className="flex justify-between gap-3 text-center w-full">
               <div className="shadow-sm bg-white p-4 rounded-sm w-full">
-                <span className="text-2xl font-bold">
+                <span className="text-[10px] md:text-2xl font-bold">
                   {axceptedFriend.days_since_contact}
                 </span>
-                <p className="text-gray-400">Days Since Contact</p>
+                <p className="text-[8px] md:text-xl text-gray-400">Days Since Contact</p>
               </div>
               <div className="shadow-sm bg-white p-4 rounded-sm w-full">
-                <span className="text-2xl font-bold">
+                <span className="text-[10px] md:text-2xl font-bold">
                   {axceptedFriend.goal}
                 </span>
-                <p className="text-gray-400">Goal (Days)</p>
+                <p className="text-[8px] md:text-xl text-gray-400">Goal (Days)</p>
               </div>
               <div className="shadow-sm bg-white p-4 rounded-sm w-full">
-                <span className="text-2xl font-bold">
+                <span className="text-[8px] md:text-2xl font-bold">
                   {axceptedFriend.next_due_date}
                 </span>
-                <p className="text-gray-400">Next Due</p>
+                <p className="text-[8px] md:text-xl text-gray-400">Next Due</p> 
               </div>
             </div>
             <div>
               <div className="shadow-sm bg-white p-4 rounded-sm w-full mt-4">
-                <span className="text-2xl font-bold flex justify-between mb-1">
-                  <h2 className="text-2xl font-bold">Relationship Goal</h2>
+                <span className="text-[10px] md:text-2xl font-bold flex justify-between mb-1">
+                  <h2 className="text-[10px] md:text-2xl font-bold">Relationship Goal</h2>
                   <button className="btn">Exit</button>
                 </span>
                 <p>
                   {" "}
                   <span className="text-gray-400">Connect every </span>
-                  <span className="text-2xl font-bold">
+                  <span className="text-[10px] md:text-2xl font-bold">
                     {" "}
                     {axceptedFriend.goal} days
                   </span>
@@ -131,37 +131,37 @@ const FriendDetailesPage = () => {
             </div>
             <div>
               <div className="shadow-sm bg-white  p-4 rounded-sm w-full mt-4">
-                <h1 className="text-2xl font-semibold py-3">Quick Check-In</h1>
+                <h1 className="text-[10px] md:text-2xl font-semibold py-3">Quick Check-In</h1>
                 <div className="flex items-center justify-between gap-3">
                   <NavLink
                     onClick={() => handleCallFriend()}
                     to={`/timeline`}
                     className="shadow-sm bg-gray-100 w-full p-4 rounded-sm text-center "
                   >
-                    <span className="text-2xl font-bold ">
+                    <span className="text-[10px] md:text-2xl font-bold ">
                       <FaPhoneVolume className="mx-auto mb-1" />
                     </span>
-                    <p className="text-gray-400">Call</p>
+                    <p className="text-[8px] md:text-xl text-gray-400">Call</p>
                   </NavLink>
                   <NavLink
                     onClick={() => handleMessegeFriend()}
                     to={`/timeline`}
                     className="shadow-sm w-full bg-gray-100 p-4 rounded-sm text-center"
                   >
-                    <span className="text-2xl font-bold">
+                    <span className="text-[10px] md:text-2xl font-bold">
                       <BiSolidMessageDots className="mx-auto mb-1" />
                     </span>
-                    <p className="text-gray-400">Text</p>
+                    <p className="text-[8px] md:text-xl text-gray-400">Text</p>
                   </NavLink>
                   <NavLink
                     onClick={() => handleVideoFriend()}
                     to={`/timeline`}
                     className="shadow-sm w-full bg-gray-100 p-4 rounded-sm text-center"
                   >
-                    <span className="text-2xl font-bold">
+                    <span className="text-[10px] md:text-2xl font-bold">
                       <IoVideocamOutline className="mx-auto mb-1" />
                     </span>
-                    <p className="text-gray-400">Video</p>
+                    <p className="text-[8px] md:text-xl text-gray-400">Video</p>
                   </NavLink>
                 </div>
               </div>

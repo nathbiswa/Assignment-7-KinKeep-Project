@@ -4,8 +4,8 @@ const HeroSection = () => {
   return (
     <div className="bg-[#E9E9E9]">
       <div className="  text-center py-10 space-y-3">
-        <h2 className="text-xl md:text-3xl font-bold">Friends to keep close in your life</h2>
-        <p className="text-gray-400">
+        <h2 className="text-[14px] md:text-3xl font-bold">Friends to keep close in your life</h2>
+        <p className="text-[12px] md:text-[16px] text-gray-400">
           Your personal shelf of meaningful connections. Browse, tend, and
           nurture the <br /> relationships that matter most.
         </p>
