@@ -95,22 +95,22 @@ const FriendDetailesPage = () => {
           <div className="flex-3">
             <div className="flex justify-between gap-3 text-center w-full">
               <div className="shadow-sm bg-white p-4 rounded-sm w-full">
-                <span className="text-[10px] md:text-2xl font-bold">
+                <span className="text-[10px]md:text-xl font-bold">
                   {axceptedFriend.days_since_contact}
                 </span>
-                <p className="text-[8px] md:text-xl text-gray-400">Days Since Contact</p>
+                <p className="text-[8px] md:text-[16px] text-gray-400">Days Since Contact</p>
               </div>
               <div className="shadow-sm bg-white p-4 rounded-sm w-full">
-                <span className="text-[10px] md:text-2xl font-bold">
+                <span className="text-[10px] md:text-xl font-bold">
                   {axceptedFriend.goal}
                 </span>
                 <p className="text-[8px] md:text-xl text-gray-400">Goal (Days)</p>
               </div>
               <div className="shadow-sm bg-white p-4 rounded-sm w-full">
-                <span className="text-[8px] md:text-2xl font-bold">
+                <span className="text-[8px]  md:text-[14px] font-bold">
                   {axceptedFriend.next_due_date}
                 </span>
-                <p className="text-[8px] md:text-xl text-gray-400">Next Due</p> 
+                <p className="text-[8px] md:text-[14px] text-gray-400">Next Due</p> 
               </div>
             </div>
             <div>

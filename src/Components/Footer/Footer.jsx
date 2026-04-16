@@ -36,9 +36,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="grid  grid-cols-1 md:grid-cols-2 justify-between gap-2 py-4 mt-10">
-          <span className="text-[12px] md:text-xl">© 2026 KeenKeeper. All rights reserved.</span>
-          <ul className="flex items-center justify-end gap-3 text-[12px] md:text-xl">
+        <div className="grid  grid-cols-1 md:grid-cols-2 md:justify-between gap-2 py-4 mt-10">
+          <span className="text-[12px] md:text-xl flex justify-center md:justify-start">© 2026 KeenKeeper. All rights reserved.</span>
+          <ul className="flex items-center justify-center md:justify-end gap-3 text-[12px] md:text-xl">
             <li>Privacy Policy</li>
             <li>Terms of Service</li>
             <li>Cookies</li>
