@@ -30,19 +30,23 @@ const StatsPage = () => {
   return (
     <div className="bg-[#ebedf0] min-h-6 md:min-h-[90vh]">
       <div className="w-8/12 mx-auto py-3 md:py-6">
-        <h1 className="text-[12px] md:text-4xl font-bold">Friendship Analytics</h1>
+        <h1 className="text-[12px] md:text-4xl font-bold">
+          Friendship Analytics
+        </h1>
       </div>
 
-      <div className="  w-full h-4/12 md:w-8/12 md:h-5/12 m-auto flex justify-center p-4 rounded  bg-white">
-        <h2 className=" w-full text-[8px] md:text-xl text-gray-500">By Interaction Type</h2>
+      <div className="  w-8/12 h-4/12 md:w-8/12 md:h-4/12 m-auto flex justify-center p-4 rounded  bg-white">
+        <h2 className=" w-full text-[10px] md:text-xl text-gray-500">
+          By Interaction Type
+        </h2>
         <PieChart
-        //   style={{
-        //     width: "100%",
-        //     maxWidth: "600px",
-        //     maxHeight: "50vh",
-        //     aspectRatio: 1,
-        //   }}
-        className="w-[250px] h-[200px] md:w-full md:min-h-[50vh] mr-10 md:mr-0 mx-auto"
+          //   style={{
+          //     width: "100%",
+          //     maxWidth: "600px",
+          //     maxHeight: "50vh",
+          //     aspectRatio: 1,
+          //   }}
+          className="w-[250px] h-[200px] md:w-full md:min-h-[50vh] mr-10 md:mr-0 mx-auto"
           responsive
         >
           <Pie
@@ -57,10 +61,11 @@ const StatsPage = () => {
             dataKey="value"
             isAnimationActive={true}
           />
-          <Legend />
-          <Tooltip />
+          <div className="mt-2">
+            <Legend />
+            <Tooltip />
+          </div>
         </PieChart>
-       
       </div>
     </div>
   );
